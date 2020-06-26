@@ -1,0 +1,192 @@
+#logo{
+    float:left;
+    width:180px;
+    height:140px;
+    margin:20px 0 0 20px;
+    line-height: normal;
+}
+
+nav#top_menu{
+	float:right;
+    margin:100px 64px 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav#top_menu ul{
+    list-style:none;
+    font-family:Verdana;
+}
+nav#top_menu ul li{
+   float:left;
+   margin:0 15px;  
+   font-size: 14pt; 
+}
+
+nav#top_menu a{
+	display:block; 
+    height:20px;
+    text-decoration:none;
+    color:#0d0e00;
+    padding: 10px;
+}
+
+nav#top_menu a:hover{
+    background-image:url(../images/purple.gif);
+    background-repeat:repeat-x;
+    background-position:bottom;
+}
+
+.clear{clear:both;}
+
+#middle{
+	border:solid 1px #0d0e00;
+    border-radius:10px;
+	width:800px;
+    align-content:center;
+    margin:0;
+    margin-right:auto;
+    margin-left:auto;
+    text-align: left;
+
+}
+
+#botton{
+    width: 810px;
+	margin: 0 auto;
+}
+
+#top{
+    background-color: #F2CB61;
+    height: 150px;
+    vertical-align: middle;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#mid_table{
+	width:900px;
+	margin: auto;
+	border-spacing: 10px;
+}
+
+
+#login_table{
+	border:solid 1px #0d0e00;
+    border-radius:10px;
+    align-content:center;
+    width:400px;
+    margin: auto;
+    border-spacing: 20px;
+}
+
+#sub_menu{
+	float: left;
+	width: 200px;
+	margin: 20px 20px 0 300px;
+	background-color: #F2CB61;
+}
+
+#sub_menu ul{
+    list-style:none;
+}
+
+#sub_menu ul li{
+	padding: 5px 0px 5px 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+#sub_menu_date{
+	float: left;
+	width: 250px;
+	border: solid; 0.5px; #0d0e00;
+	margin: 0 20px 0 100px;
+	padding: 20px;
+}
+
+
+#car_detail_table{
+	border-spacing: 20px;
+}
+
+#textbox{
+	background-color: #D8D8D8;
+	width: 500px;
+	height: 170px;
+	padding: 20px 0 20px 20px;
+}
+
+
+.List{
+	width: 1000px; /* div 가운데 정렬할 때, margin전에 전체 길이를 지정해줘야 한다!!*/
+	margin: 0 auto;
+}
+
+#List{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#detail td{
+	padding-right: 20px;
+}
+
+#info1{
+	padding-left: 200px;
+	float: left;
+	padding-right: 50px;
+}
+
+#info2{
+	float: left;
+}
+
+#info2 td{
+	padding-right: 60px;
+}
+
+#review{
+	border-radius: 15px;
+}
+
+#review td{
+	text-align: center;
+	border-radius: 15px;
+}
+
+#contentbox{
+	background-color: #D8D8D8;
+	width: 500px;
+	height: 80px;
+}
+
+#reviewDetail{
+	float: left;
+	margin-right: 10px;
+}
+
+.join{
+	width: 1000px; /* div 가운데 정렬할 때, margin전에 전체 길이를 지정해줘야 한다!!*/
+	margin: 0 auto;
+}
+
+
+
+#productList{
+	border-collapse: collapse; /* border 사이의 간격 없앰 */
+	border-top: 2px solid #333;
+	border-bottom: 1px solid #333;
+	width: 50%; /* 전체 테이블 길이 설정 */
+
+}
+
+#textbox2{
+	background-color: #D8D8D8;
+	width: 800px;
+	height: 40px;
+	padding: 10px 0 20px 20px;
+}
+
+#guideList{
+	border-spacing: 10px;
+}

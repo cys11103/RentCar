@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	
+	<typeAliases>
+		<typeAlias type="com.green.biz.member.MemberVO" alias="member"></typeAlias>
+		<typeAlias type="com.green.biz.qna.QnaVO" alias="qna"></typeAlias>
+		<typeAlias type="com.green.biz.notice.NoticeVO" alias="notice"/>
+		<typeAlias type="com.green.biz.car.CarVO" alias="car"/>
+		<typeAlias type="com.green.biz.booking.BookingVO" alias="booking"/>
+		<typeAlias type="com.green.biz.pay.PayVO" alias="pay"/>
+		<typeAlias type="com.green.biz.insurance.InsuranceVO" alias="insurance"/>
+		<typeAlias type="com.green.biz.review.ReviewVO" alias="review"/>
+		<typeAlias type="com.green.biz.guide.GuideVO" alias="guide"/>
+		<typeAlias type="com.green.biz.worker.WorkerVO" alias="worker"/>
+	</typeAliases>
+
+	<mappers>
+		<mapper resource="mappings/member-mapping.xml" />
+		<mapper resource="mappings/qna-mapping.xml"/>
+		<mapper resource="mappings/notice-mapping.xml"/>
+		<mapper resource="mappings/car-mapping.xml"/>
+		<mapper resource="mappings/booking-mapping.xml"/>
+		<mapper resource="mappings/pay-mapping.xml"/>
+		<mapper resource="mappings/insurance-mapping.xml"/>
+		<mapper resource="mappings/review-mapping.xml"/>
+		<mapper resource="mappings/guide-mapping.xml"/>
+		<mapper resource="mappings/worker-mapping.xml"/>
+	</mappers>
+</configuration>

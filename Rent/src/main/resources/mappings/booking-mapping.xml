@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BookingDAO">
+
+	<!-- 예약 등록 -->
+	<insert id="insertBooking" useGeneratedKeys="true" keyProperty="bseq" keyColumn="bseq" parameterType="booking">
+		<selectKey resultType="int" keyProperty="bseq" order="BEFORE">
+			select booking_seq.nextval from dual
+		</selectKey>
+		INSERT INTO booking(bseq, id)
+		VALUES (#{bseq}, #{id})
+		
+	</insert>
+
+	<!-- 예약상세 등록 -->
+	<insert id="insertBookingDetail">
+		INSERT INTO booking_detail(bdseq, bseq, start_date, start_time, end_date, end_time, doo, si, pseq, iseq, gseq, license) 
+		VALUES (book_detail_seq.nextval, #{bseq}, #{start_date}, #{start_time}, #{end_date}, #{end_time}, #{doo}, #{si}, #{pseq}, #{iseq}, #{gseq}, #{license})
+	</insert>
+	
+	<!-- 고객별 예약내역 조회 -->
+	<select id="bookingListById" resultType="booking">
+		SELECT *
+		FROM booking_view
+		WHERE id=#{id}
+	</select>
+	
+	<!-- 고객 예약 내역 상세 보기 -->
+	<select id="getBookingList" parameterType="int" resultType="booking">
+		SELECT *
+		FROM booking_view
+		WHERE bseq=#{bseq}
+	</select>
+
+	<!-- 전체 예약 내역 조회 -->
+	<select id="bookingList" resultType="booking">
+		SELECT *
+		FROM booking_view
+	</select>
+	
+	<!-- 예약삭제 -->
+	<delete id="deleteBooking">
+		DELETE FROM booking
+		WHERE bseq=#{bseq}
+	</delete>
+	
+	<!-- 예약삭제2 -->
+	<delete id="deleteBookingDetail">
+		DELETE FROM booking_detail
+		WHERE bdseq=#{bdseq}
+	</delete>
+</mapper>
